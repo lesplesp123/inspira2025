@@ -1,96 +1,187 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Glowline</title>
-  <link rel="icon" href="favicon.png" type="image/png">
-  <style>
-    body { margin: 0; font-family: 'Helvetica Neue', Arial, sans-serif; background: #fff; color: #333; }
-    .hero {
-      background: url('banner.png') center/cover no-repeat;
-      height: 60vh;
-      display: flex; align-items: center; justify-content: center;
-      color: #fff; text-shadow: 0 2px 8px rgba(0,0,0,0.7);
-    }
-    .hero h1 { font-size: 3em; margin: 0; }
-    .container { max-width: 1000px; margin: auto; padding: 40px 20px; }
-    .section { margin-bottom: 60px; }
-    .section h2 { font-size: 2em; color: #00695c; margin-bottom: 20px; }
-    .section p, .section ul { font-size: 1.1em; line-height: 1.6; }
-    .section ul { padding-left: 20px; }
-    .button {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 12px 24px;
-      background-color: #26a69a;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 24px;
-      font-size: 1em;
-    }
-    footer {
-      background: #004d40; color: #fff;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glowline - Movilidad Sostenible e Innovadora</title>
+    <style>
+        /* Estilos base */
+        body {
+            margin: 0;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            color: #222;
+            background-color: #fff;
+        }
+        h1, h2, h3 {
+            font-weight: bold;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Header */
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header nav a {
+            margin-left: 20px;
+            color: #fff;
+            font-weight: 500;
+        }
+        header nav a:hover {
+            color: #00ff99;
+        }
+
+        /* Hero */
+        .hero {
+            position: relative;
+            background: url('https://images.unsplash.com/photo-1508739773434-c26b3d09e071') center/cover no-repeat;
+            color: white;
+            text-align: center;
+            padding: 120px 20px;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            max-width: 800px;
+            margin: auto;
+        }
+        .hero p {
+            font-size: 1.3rem;
+            margin-top: 20px;
+        }
+
+        /* Secciones */
+        section {
+            padding: 60px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+        .highlight {
+            color: #00c97b;
+        }
+
+        /* CTA */
+        .cta {
+            background-color: #00c97b;
+            color: #fff;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .cta a {
+            background-color: #000;
+            color: #fff;
+            padding: 15px 25px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .cta a:hover {
+            background-color: #333;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .grid-2 {
+                grid-template-columns: 1fr;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
 </head>
 <body>
 
-  <section class="hero">
-    <h1>Glowline</h1>
-  </section>
+    <!-- Header -->
+    <header>
+        <div class="logo"><h2>Glowline</h2></div>
+        <nav>
+            <a href="#problema">Problema</a>
+            <a href="#solucion">Solución</a>
+            <a href="#tecnologia">Tecnología</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
 
-  <main class="container">
-    <section class="section">
-      <h2>Idea</h2>
-      <p>Implementación de bandas fotoluminiscentes blancas (día) y verdes (noche) en bordes viales estratégicos, complementadas por internos módulos solares UV-LED, mejorando la visión nocturna y la seguridad en tramos críticos.</p>
+    <!-- Hero -->
+    <section class="hero">
+        <h1>Movilidad sostenible e innovadora para carreteras más seguras</h1>
+        <p>Glowline combina pintura fotoluminiscente y recarga UV-LED solar para reducir accidentes viales nocturnos.</p>
     </section>
 
-    <section class="section">
-      <h2>Desarrollo</h2>
-      <p>La solución combina pintura fotoluminiscente con recarga UV-LED cuando la luz solar no es suficiente. Se implementa en etapas: diagnóstico, piloto, instalación, y monitoreo.</p>
-      <ul>
-        <li>Diagnóstico en Peaje Lateral Lautaro</li>
-        <li>Pintura + bandas de 50–100 mm</li>
-        <li>Módulos UV-LED estratégicos con sensores</li>
-        <li>Monitoreo de siniestralidad y durabilidad</li>
-      </ul>
+    <!-- Problema -->
+    <section id="problema">
+        <h2>El Problema</h2>
+        <div class="grid-2">
+            <div>
+                <p>En zonas rurales y peajes como el <strong>Peaje Lateral Lautaro</strong>, la baja visibilidad nocturna y las condiciones climáticas adversas como niebla y lluvia aumentan el riesgo de colisiones y salidas de calzada. En 2024, Chile registró <strong class="highlight">1.438 muertes por siniestros viales</strong>, muchas relacionadas a baja visibilidad.</p>
+            </div>
+            <div>
+                <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d" alt="Carretera nocturna con baja visibilidad">
+            </div>
+        </div>
     </section>
 
-    <section class="section">
-      <h2>Aplicabilidad & Escalabilidad</h2>
-      <p>Diseño ideal para La Araucanía y Los Ríos. Escalable a nivel nacional e internacional. Modelo de negocio B2G/B2B con opción de kits para municipios.</p>
-      <a href="#presupuesto" class="button">Ver presupuesto</a>
+    <!-- Solución -->
+    <section id="solucion" style="background-color: #f7f7f7;">
+        <h2>La Solución Glowline</h2>
+        <div class="grid-2">
+            <div>
+                <img src="https://images.unsplash.com/photo-1516455207990-7a41ce80f7ee" alt="Tecnología sostenible en carreteras">
+            </div>
+            <div>
+                <p>Aplicamos <strong>pintura fotoluminiscente</strong> en bordes viales que brilla hasta 8 horas, más <strong>módulos UV-LED solares</strong> en zonas críticas para garantizar visibilidad incluso en días nublados. Es autónomo, sostenible y de bajo mantenimiento.</p>
+                <ul>
+                    <li>Brillo nocturno verde intenso</li>
+                    <li>Recarga solar y respaldo UV-LED</li>
+                    <li>Instalación rápida y modular</li>
+                    <li>Bajo costo operativo</li>
+                </ul>
+            </div>
+        </div>
     </section>
 
-    <section id="presupuesto" class="section">
-      <h2>Presupuesto Estimado</h2>
-      <ul>
-        <li>Módulos UV-LED (4 uds): $800.000 CLP</li>
-        <li>Pintura (500 m): $475.000 CLP</li>
-        <li>Mano de obra: $1.200.000 CLP</li>
-        <li>Sensores: $300.000 CLP</li>
-        <li>Monitoreo: $500.000 CLP</li>
-        <li><strong>Total (con 15% contingencia): $4.000.000 CLP</strong></li>
-      </ul>
+    <!-- Tecnología -->
+    <section id="tecnologia">
+        <h2>Innovación Tecnológica</h2>
+        <p>Glowline combina lo mejor de dos mundos: tecnología pasiva (pintura fotoluminiscente) y activa (UV-LED solar inteligente). Un sistema de monitoreo remoto asegura mantenimiento preventivo, maximizando seguridad y durabilidad.</p>
+        <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231" alt="Tecnología fotoluminiscente y energía solar">
     </section>
 
-    <section class="section">
-      <h2>Integrantes</h2>
-      <ul>
-        <li>Luciano Sanzana — Liderazgo y desarrollo técnico</li>
-        <li>[Nombre integrante 2]</li>
-        <li>[Nombre integrante 3]</li>
-      </ul>
+    <!-- CTA -->
+    <section class="cta">
+        <h2>Conectemos para un futuro más seguro</h2>
+        <p>Contáctanos para llevar Glowline a más carreteras y salvar vidas.</p>
+        <a href="#contacto">Contáctanos</a>
     </section>
-  </main>
 
-  <footer>
-    &copy; 2025 Glowline — Innovación y seguridad vial nocturna
-  </footer>
+    <!-- Footer -->
+    <footer id="contacto">
+        <p>&copy; 2025 Glowline - Movilidad Sostenible. Todos los derechos reservados.</p>
+        <p>Email: contacto@glowline.cl</p>
+    </footer>
 
 </body>
 </html>
