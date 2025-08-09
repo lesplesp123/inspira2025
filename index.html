@@ -1,92 +1,151 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INNSPIRA 2025 - Proyecto Fotoluminiscente</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            background-color: #f4f6f8;
-        }
-        header {
-            background-color: #004d40;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        section {
-            max-width: 900px;
-            margin: auto;
-            background: white;
-            padding: 20px;
-            margin-top: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        h2 {
-            color: #00796b;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        footer {
-            text-align: center;
-            padding: 15px;
-            background-color: #004d40;
-            color: white;
-            margin-top: 20px;
-        }
-    </style>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>INNSPIRA 2025 - Proyecto Fotoluminiscente</title>
+<link rel="icon" href="favicon.png">
+<style>
+:root{--accent:#00796b;--dark:#004d40;--muted:#6b7280;--card:#ffffff;--bg:#f4f6f8}
+body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;background:var(--bg);color:#111}
+.header{background:linear-gradient(90deg,var(--dark),#00695c);padding:48px 20px;color:white;text-align:center}
+.container{max-width:1100px;margin:24px auto;padding:0 16px}
+.card{background:var(--card);border-radius:10px;padding:20px;margin-bottom:20px;box-shadow:0 6px 18px rgba(16,24,40,0.06)}
+h1,h2{color:var(--dark)}
+.lead{color:var(--muted)}
+.grid{display:grid;grid-template-columns:1fr 320px;gap:20px}
+@media(max-width:900px){.grid{grid-template-columns:1fr}}
+.section-title{display:flex;align-items:center;gap:12px}
+.kv{display:flex;gap:12px;flex-wrap:wrap}
+.kv div{background:#f1f5f9;padding:10px;border-radius:8px}
+.table{width:100%;border-collapse:collapse}
+.table td, .table th{padding:8px;border-bottom:1px solid #eee;text-align:left}
+.footer{text-align:center;padding:16px;color:white;background:var(--dark);border-radius:0 0 10px 10px;margin-top:10px}
+.img-steps img{width:100%;border-radius:8px;margin-bottom:12px}
+.team li{margin-bottom:6px}
+.badge{display:inline-block;padding:6px 10px;border-radius:999px;background:#e6f4f1;color:var(--dark);font-weight:600}
+</style>
 </head>
 <body>
-
-<header>
-    <h1>INNSPIRA 2025</h1>
-    <h3>Proyecto de Pintura Fotoluminiscente para Carreteras</h3>
+<header class="header">
+  <img src="banner.png" alt="INNSPIRA 2025" style="max-width:420px;margin-bottom:12px"/>
+  <h1>INNSPIRA 2025</h1>
+  <p class="lead">Proyecto fotoluminiscente para mejorar la visibilidad nocturna en carreteras (Peaje Lateral Lautaro, km 645 - Ruta 5 Sur)</p>
 </header>
 
-<section>
-    <h2>Idea</h2>
-    <p>El proyecto busca mejorar la visibilidad nocturna y en condiciones climáticas adversas en puntos críticos de carreteras, especialmente en zonas rurales y peajes sin iluminación. Se propone instalar bandas fotoluminiscentes blancas de día y verdes de noche, combinadas con sistemas UV-LED autónomos alimentados por paneles solares, que recarguen la pintura en zonas con poca radiación solar.</p>
-</section>
-
-<section>
-    <h2>Desarrollo</h2>
-    <p>La solución combina dos tecnologías: pintura fotoluminiscente de alta resistencia y módulos UV-LED solares en tramos críticos. Durante el día, la pintura absorbe luz natural; de noche, emite un brillo verde visible por hasta 8 horas. Los módulos UV-LED, alimentados por energía solar, recargan la pintura cuando hay baja luz ambiental.</p>
+<main class="container">
+  <section class="card">
+    <div class="section-title">
+      <h2>Idea <span class="badge">Resumen</span></h2>
+    </div>
+    <p>Implementar bandas fotoluminiscentes blancas (día) y verdes (noche) en el borde externo de las líneas viales, con módulos <strong>UV-LED</strong> solares de respaldo para recarga en tramos de baja radiación solar. Objetivo: reducir siniestros nocturnos, mejorar la percepción de la calzada y aportar a la movilidad sostenible.</p>
     <ul>
-        <li>Diagnóstico de zonas críticas.</li>
-        <li>Instalación piloto en el Peaje Lateral Lautaro.</li>
-        <li>Pintura en bordes viales y módulos UV-LED con sensores.</li>
-        <li>Monitoreo y escalamiento.</li>
+      <li>Ubicación piloto: <strong>Peaje Lateral Lautaro (km 645, Ruta 5 Sur)</strong></li>
+      <li>Brillo: hasta 8 horas tras carga</li>
+      <li>Respaldo por UV-LED alimentado por paneles solares</li>
     </ul>
-    <p><strong>Presupuesto estimado:</strong> $4.000.000 CLP incluyendo módulos UV-LED, pintura, mano de obra, sensores y contingencias.</p>
-</section>
+  </section>
 
-<section>
-    <h2>Aplicabilidad</h2>
-    <p>Los clientes potenciales incluyen el MTT, CONASET, Dirección de Vialidad y concesionarias como ISA Vías. Los usuarios beneficiados son conductores, peatones y ciclistas en zonas rurales y de alto riesgo vial. Se ofrece una solución sostenible, de bajo costo y fácil implementación.</p>
-</section>
+  <div class="grid">
+    <div>
+      <section class="card">
+        <h2>Desarrollo</h2>
+        <p>La solución combina pintura fotoluminiscente de alta durabilidad con módulos UV-LED que se activan por sensores de luminosidad. La intervención se realizará por fases: diagnóstico, piloto, instalación y monitoreo.</p>
+        <h3>Fases</h3>
+        <ol>
+          <li><strong>Diagnóstico</strong>: identificar tramos con mayor siniestralidad.</li>
+          <li><strong>Piloto</strong>: aplicación en Peaje Lateral Lautaro.</li>
+          <li><strong>Implementación</strong>: pintura + 50–100 mm de bandas + módulos UV en puntos críticos.</li>
+          <li><strong>Monitoreo</strong>: evaluar reducción de accidentes y durabilidad.</li>
+        </ol>
 
-<section>
-    <h2>Escalabilidad</h2>
-    <p>El proyecto puede comenzar en La Araucanía y Los Ríos por sus condiciones climáticas y alta siniestralidad. Luego, se puede expandir a nivel nacional e internacional, adaptándose a carreteras con necesidades similares.</p>
-</section>
+        <h3>Presupuesto (MVP)</h3>
+        <table class="table">
+          <tr><th>Concepto</th><th>CLP</th></tr>
+          <tr><td>Módulos UV-LED (4 uds)</td><td>$800.000</td></tr>
+          <tr><td>Pintura (500 m)</td><td>$475.000</td></tr>
+          <tr><td>Mano de obra</td><td>$1.200.000</td></tr>
+          <tr><td>Sensores</td><td>$300.000</td></tr>
+          <tr><td>Monitoreo</td><td>$500.000</td></tr>
+          <tr><td><strong>Contingencia 15%</strong></td><td>$725.000</td></tr>
+          <tr><th>Total</th><th>$4.000.000</th></tr>
+        </table>
+      </section>
 
-<section>
-    <h2>Integrantes</h2>
+      <section class="card">
+        <h2>Por qué es novedoso</h2>
+        <p>Combina una solución <em>pasiva</em> (pintura fotoluminiscente) con una solución <em>activa</em> (recarga controlada por UV-LED) solo en puntos críticos —minimizando costos y maximizando eficacia en condiciones de baja radiación—. No altera la señalización existente y es modular.</p>
+      </section>
+
+      <section class="card">
+        <h2>Clientes y usuarios</h2>
+        <p><strong>Clientes:</strong> MTT, Dirección de Vialidad, CONASET, concesionarias (ej. ISA Vías), municipios.</p>
+        <p><strong>Usuarios finales:</strong> conductores nocturnos, camioneros, peatones y ciclistas.</p>
+      </section>
+    </div>
+
+    <aside>
+      <section class="card">
+        <h2>Aplicabilidad & Escalabilidad</h2>
+        <p>Ideal para La Araucanía y Los Ríos por clima y siniestralidad. Escalable a nivel nacional e internacional mediante implementación por tramos priorizados y modelos B2G/B2B.</p>
+        <h4>Modelo de ingresos</h4>
+        <div class="kv">
+          <div>Pago por km tratado</div>
+          <div>Contrato de mantenimiento recurrente</div>
+          <div>Venta de kits a municipios</div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Integrantes</h2>
+        <ul class="team">
+          <li>Luciano Sanzana — Líder de proyecto y desarrollo técnico</li>
+          <li>[Nombre integrante 2] — Rol</li>
+          <li>[Nombre integrante 3] — Rol</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>Tecnología</h2>
+        <p>Pintura fotoluminiscente de última generación + módulos UV-LED 365 nm + paneles solares 50W + baterías y controladores. Integración con sistema de monitoreo remoto para mantenimiento predictivo.</p>
+      </section>
+    </aside>
+  </div>
+
+  <section class="card">
+    <h2>Guía rápida: publicar en GitHub Pages</h2>
+    <p>Sigue las imágenes de abajo (están incluidas en el paquete):</p>
+    <div class="img-steps">
+      <img src="step1_create_repo.png" alt="Paso 1">
+      <img src="step2_add_file.png" alt="Paso 2">
+      <img src="step3_commit.png" alt="Paso 3">
+      <img src="step4_pages.png" alt="Paso 4">
+    </div>
+
+    <h3>Instrucciones detalladas</h3>
+    <ol>
+      <li>En GitHub, crea un nuevo repositorio público llamado <code>innspira-2025</code> y añade un README.</li>
+      <li>En el repositorio, haz <strong>Add file → Create new file</strong> y nombra el archivo <code>index.html</code>. Pega el contenido del archivo <code>index.html</code> provisto en el paquete.</li>
+      <li>Commit the file (Commit new file).</li>
+      <li>Ve a <strong>Settings → Pages</strong>, selecciona la branch <code>main</code> y la carpeta <code>/root</code>. Guarda. GitHub te entregará la URL pública en unos minutos.</li>
+      <li>Para cambios futuros, edita <code>index.html</code> y vuelve a hacer commit; la página se actualizará automáticamente.</li>
+    </ol>
+    <p>Archivos incluidos en el paquete: <code>index.html</code>, <code>banner.png</code>, <code>step1_create_repo.png</code>, <code>step2_add_file.png</code>, <code>step3_commit.png</code>, <code>step4_pages.png</code>.</p>
+  </section>
+
+  <section class="card">
+    <h2>Materiales adicionales</h2>
+    <p>Si quieres, puedo generar también:</p>
     <ul>
-        <li>Luciano Sanzana — Líder de proyecto y desarrollo técnico</li>
-        <li>[Nombre integrante 2]</li>
-        <li>[Nombre integrante 3]</li>
+      <li>Versión en PDF del proyecto (listo para imprimir y presentar).</li>
+      <li>Versión en inglés.</li>
+      <li>Ficha técnica con especificaciones de materiales.</li>
     </ul>
-</section>
+  </section>
+</main>
 
-<footer>
-    <p>Proyecto INNSPIRA 2025 - Todos los derechos reservados</p>
+<footer class="footer">
+  INNSPIRA 2025 — Proyecto Fotoluminiscente · Peaje Lateral Lautaro · © Equipo Proyecto
 </footer>
-
 </body>
 </html>
