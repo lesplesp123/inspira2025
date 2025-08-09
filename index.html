@@ -1,120 +1,96 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto Glowline 2025</title>
-    <link rel="icon" type="image/png" href="favicon.png">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-        header {
-            background-color: #004080;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        header img {
-            max-width: 100%;
-            height: auto;
-        }
-        main {
-            padding: 20px;
-            max-width: 900px;
-            margin: auto;
-        }
-        section {
-            background: white;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-        h2 {
-            color: #004080;
-        }
-        footer {
-            background-color: #00264d;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            font-size: 0.9em;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glowline</title>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <style>
+    body { margin: 0; font-family: 'Helvetica Neue', Arial, sans-serif; background: #fff; color: #333; }
+    .hero {
+      background: url('banner.png') center/cover no-repeat;
+      height: 60vh;
+      display: flex; align-items: center; justify-content: center;
+      color: #fff; text-shadow: 0 2px 8px rgba(0,0,0,0.7);
+    }
+    .hero h1 { font-size: 3em; margin: 0; }
+    .container { max-width: 1000px; margin: auto; padding: 40px 20px; }
+    .section { margin-bottom: 60px; }
+    .section h2 { font-size: 2em; color: #00695c; margin-bottom: 20px; }
+    .section p, .section ul { font-size: 1.1em; line-height: 1.6; }
+    .section ul { padding-left: 20px; }
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background-color: #26a69a;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 24px;
+      font-size: 1em;
+    }
+    footer {
+      background: #004d40; color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+  </style>
 </head>
 <body>
 
-<header>
-    <img src="banner.png" alt="Banner del proyecto">
-    <h1>Proyecto Glowline 2025</h1>
-</header>
+  <section class="hero">
+    <h1>Glowline</h1>
+  </section>
 
-<main>
-    <section>
-        <h2>Idea del Proyecto</h2>
-        <p>Implementación de un sistema inteligente de monitoreo y control para el transporte público, 
-        orientado a mejorar la seguridad, la eficiencia y la experiencia de los usuarios.</p>
+  <main class="container">
+    <section class="section">
+      <h2>Idea</h2>
+      <p>Implementación de bandas fotoluminiscentes blancas (día) y verdes (noche) en bordes viales estratégicos, complementadas por internos módulos solares UV-LED, mejorando la visión nocturna y la seguridad en tramos críticos.</p>
     </section>
 
-    <section>
-        <h2>Desarrollo</h2>
-        <p>El proyecto integra sensores IoT, software de gestión en la nube y aplicaciones móviles 
-        para supervisar en tiempo real el flujo de pasajeros, condiciones del vehículo y rutas. 
-        Se utiliza inteligencia artificial para optimizar la asignación de recursos y tiempos de viaje.</p>
+    <section class="section">
+      <h2>Desarrollo</h2>
+      <p>La solución combina pintura fotoluminiscente con recarga UV-LED cuando la luz solar no es suficiente. Se implementa en etapas: diagnóstico, piloto, instalación, y monitoreo.</p>
+      <ul>
+        <li>Diagnóstico en Peaje Lateral Lautaro</li>
+        <li>Pintura + bandas de 50–100 mm</li>
+        <li>Módulos UV-LED estratégicos con sensores</li>
+        <li>Monitoreo de siniestralidad y durabilidad</li>
+      </ul>
     </section>
 
-    <section>
-        <h2>Aplicabilidad</h2>
-        <p>Puede implementarse en flotas de buses urbanos, interurbanos o transporte escolar, 
-        mejorando la puntualidad, reduciendo costos y aumentando la seguridad.</p>
+    <section class="section">
+      <h2>Aplicabilidad & Escalabilidad</h2>
+      <p>Diseño ideal para La Araucanía y Los Ríos. Escalable a nivel nacional e internacional. Modelo de negocio B2G/B2B con opción de kits para municipios.</p>
+      <a href="#presupuesto" class="button">Ver presupuesto</a>
     </section>
 
-    <section>
-        <h2>Escalabilidad</h2>
-        <p>El sistema está diseñado para crecer desde una flota piloto de 5 vehículos 
-        hasta operaciones a nivel nacional sin cambios estructurales significativos.</p>
+    <section id="presupuesto" class="section">
+      <h2>Presupuesto Estimado</h2>
+      <ul>
+        <li>Módulos UV-LED (4 uds): $800.000 CLP</li>
+        <li>Pintura (500 m): $475.000 CLP</li>
+        <li>Mano de obra: $1.200.000 CLP</li>
+        <li>Sensores: $300.000 CLP</li>
+        <li>Monitoreo: $500.000 CLP</li>
+        <li><strong>Total (con 15% contingencia): $4.000.000 CLP</strong></li>
+      </ul>
     </section>
 
-    <section>
-        <h2>Integrantes</h2>
-        <ul>
-            <li>Juan Pérez — Coordinador General</li>
-            <li>María López — Desarrolladora IoT</li>
-            <li>Carlos Ruiz — Ingeniero de Software</li>
-            <li>Ana Torres — Analista de Datos</li>
-        </ul>
+    <section class="section">
+      <h2>Integrantes</h2>
+      <ul>
+        <li>Luciano Sanzana — Liderazgo y desarrollo técnico</li>
+        <li>[Nombre integrante 2]</li>
+        <li>[Nombre integrante 3]</li>
+      </ul>
     </section>
+  </main>
 
-    <section>
-        <h2>Presupuesto Estimado</h2>
-        <ul>
-            <li>Equipos IoT: $3,000</li>
-            <li>Desarrollo Software: $5,000</li>
-            <li>Infraestructura en la nube: $1,500</li>
-            <li>Capacitación: $500</li>
-            <li><strong>Total: $10,000</strong></li>
-        </ul>
-    </section>
-
-    <section>
-        <h2>Tecnología Utilizada</h2>
-        <ul>
-            <li>Lenguajes: Python, JavaScript</li>
-            <li>Frameworks: Node.js, React</li>
-            <li>Base de Datos: MongoDB</li>
-            <li>Servicios en la Nube: AWS</li>
-        </ul>
-    </section>
-</main>
-
-<footer>
-    &copy; 2025 Proyecto Glowline — Todos los derechos reservados.
-</footer>
+  <footer>
+    &copy; 2025 Glowline — Innovación y seguridad vial nocturna
+  </footer>
 
 </body>
 </html>
